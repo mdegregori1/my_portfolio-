@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components"
-import { Link } from "react-router-dom";
+
 
 export const NavBar = () => {
     return (
@@ -9,9 +9,9 @@ export const NavBar = () => {
                 <Me href="/Home">Mauricio Degregori</Me>
             </Name>
             <Tabs>
-                <Categories href="/Projects">Coding Projects</Categories>
-                <Categories href="/Writing">My Writing</Categories>
+                <Categories href="/Projects">Projects</Categories>
                 <Categories href="/About">About Me</Categories>
+                <Categories href="/Writing">Writing</Categories>
             </Tabs>
         </Container>
     )
@@ -43,10 +43,14 @@ align-items: center;
 const Me = styled.a`
 text-decoration: none;
 margin-left: 2%;
-color: black;
+font-weight: bold;
+color: #F06A67;
 `
 const Categories = styled.a`
 text-decoration: none;
-color: black;
+color: #1351a8;
+&:hover {
+    color: #F06A67;
+}
 
 `
