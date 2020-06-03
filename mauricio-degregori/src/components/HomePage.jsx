@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components"
-import Me from "../img/me.png"
-import {Link} from "react-router-dom"
+import CartoonMe from "../img/cartoonme.png"
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 
 export const HomePage = () => {
@@ -9,7 +8,7 @@ export const HomePage = () => {
     return (
         <MainCont>
             <Content>
-                <Picture src={Me}/>
+                <Picture src={CartoonMe}/>
                 <Intro>Hey, I'm Mauricio.</Intro>
                 <About>
                     <p>I build <BodyTag href="/Projects">projects</BodyTag> using React, Redux, and Node. Also skilled in HTML, JS, CSS, and Python + Flask. </p>
@@ -18,13 +17,13 @@ export const HomePage = () => {
                 </About>
                 <Social>
                     <Tag href ="https://www.linkedin.com/in/mauricio-degregori/" target="_blank">
-                        <FaLinkedinIn size="2rem"/>
+                        <FaLinkedinIn size="2rem" color="#ffffff"/>
                     </Tag>
                     <Tag href ="https://github.com/mdegregori1" target="_blank">
-                        <FaGithub size="2rem"/>
+                        <FaGithub size="2rem" color="#ffffff"/>
                     </Tag>
                     <Tag href = "https://twitter.com/degregori_pe" target="_blank">
-                        <FaTwitter size="2rem"/>
+                        <FaTwitter size="2rem" color="#ffffff"/>
                     </Tag>
                 </Social>
             </Content>
@@ -39,10 +38,11 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+color: #ffffff;
 `
 const BodyTag = styled.a`
 text-decoration: none;
-color: #1351a8;
+color: #BB86FC;
 `
 const Tag = styled.a`
 text-decoration: none;
@@ -60,7 +60,7 @@ padding: 1%;
 
 `
 const Picture = styled.img`
-width: 20rem;
+width: 15rem;
 height: 15rem;
 
 
@@ -71,7 +71,8 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-height: 90vh;
+height: 100vh;
+background: #2a3439;
 
 `
 const Content = styled.div`
@@ -82,13 +83,15 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+border: 4px solid #36454F;
+border-radius: 30px;
 
 `
 
 const Intro = styled.h3`
 text-align: center;
 width: 100%;
-color: #F06A67;
+color: #BB86FC;
 
 
 

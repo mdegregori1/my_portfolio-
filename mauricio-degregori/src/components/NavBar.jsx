@@ -9,8 +9,8 @@ export const NavBar = () => {
                 <Me href="/Home">Mauricio Degregori</Me>
             </Name>
             <Tabs>
+                <Categories href="/Home">Home</Categories>
                 <Categories href="/Projects">Projects</Categories>
-                <Categories href="/About">About Me</Categories>
                 <Categories href="/Writing">Writing</Categories>
             </Tabs>
         </Container>
@@ -19,7 +19,7 @@ export const NavBar = () => {
 
 const Container = styled.div`
 width: 100%;
-border-bottom: 1px solid #e6e6e6;
+background: #2a3439;
 height: 8vh;
 display: flex;
 align-items: center;
@@ -44,13 +44,13 @@ const Me = styled.a`
 text-decoration: none;
 margin-left: 2%;
 font-weight: bold;
-color: #F06A67;
+color: #BB86FC;
 `
 const Categories = styled.a`
 text-decoration: none;
-color: #1351a8;
+color: #ffffff;
 &:hover {
-    color: #F06A67;
+    color: #BB86FC;
 }
 
 `
