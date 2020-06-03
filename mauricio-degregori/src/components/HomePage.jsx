@@ -10,8 +10,12 @@ export const HomePage = () => {
         <MainCont>
             <Content>
                 <Picture src={Me}/>
-                <Intro>Hey, I'm Mauricio Degregori.</Intro>
-                <p>I'm a full-stack web developer who studied at Lambda School. While there, I built some projects using HTML/CSS/JS, React/Redux, NodeJS, Express, Python, and Flask. Feel free to, for some reason, read more about me here.</p>
+                <Intro>Hey, I'm Mauricio.</Intro>
+                <About>
+                    <p>I build <BodyTag href="/Projects">projects</BodyTag> using React, Redux, and Node. Also skilled in HTML, JS, CSS, and Python + Flask. </p>
+                    <p>I also like to <BodyTag href="/Writing">write</BodyTag>, make videos, skateboard, and make people laugh.</p>
+                    <p>Currently learning Angular, and working on <BodyTag href="https://quackhire.com/">Quackhire.</BodyTag></p>
+                </About>
                 <Social>
                     <Tag href ="https://www.linkedin.com/in/mauricio-degregori/" target="_blank">
                         <FaLinkedinIn size="2rem"/>
@@ -29,6 +33,17 @@ export const HomePage = () => {
     )
 }
 
+const About = styled.div`
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+`
+const BodyTag = styled.a`
+text-decoration: none;
+color: #1351a8;
+`
 const Tag = styled.a`
 text-decoration: none;
 color: black;
@@ -40,6 +55,8 @@ width: 20%;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
+margin-top: 1%;
+padding: 1%;
 
 `
 const Picture = styled.img`
@@ -71,6 +88,8 @@ align-items: center;
 const Intro = styled.h3`
 text-align: center;
 width: 100%;
+color: #F06A67;
+
 
 
 `
