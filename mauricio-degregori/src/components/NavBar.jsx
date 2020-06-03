@@ -6,7 +6,7 @@ export const NavBar = () => {
     return (
         <Container>
             <Name>
-                <Me href="/Home">Mauricio Degregori</Me>
+                <Me href="/Home">MD</Me>
             </Name>
             <Tabs>
                 <Categories href="/Projects">Projects</Categories>
