@@ -12,7 +12,7 @@ export const HomePage = () => {
                 <Intro>Hey, I'm Mauricio.</Intro>
                 <About>
                     <p>I build <BodyTag href="/Projects">projects</BodyTag> using React, Redux, and Node. Also skilled in HTML, JS, CSS, and Python + Flask. </p>
-                    <p>I also like to <BodyTag href="/Writing">write</BodyTag>, make videos, skateboard, and make people laugh.</p>
+                    <p>I like to <BodyTag href="/Writing">write</BodyTag>, make videos, skateboard, and make people laugh.</p>
                     <p>Currently learning Angular, and working on <BodyTag href="https://quackhire.com/">Quackhire.</BodyTag></p>
                 </About>
                 <Social>
