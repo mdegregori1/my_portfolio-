@@ -106,6 +106,7 @@ width: 25rem;
 
 let AllProjects = styled.div`
 background: #2a3439;
+padding: 5%;
 `
 
 let Pair = styled.div`
