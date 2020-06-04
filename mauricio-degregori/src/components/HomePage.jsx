@@ -32,7 +32,7 @@ export const HomePage = () => {
     )
 }
 
-const About = styled.div`
+let About = styled.div`
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -40,33 +40,32 @@ align-items: center;
 justify-content: center;
 color: #ffffff;
 `
-const BodyTag = styled.a`
+let BodyTag = styled.a`
 text-decoration: none;
 color: #BB86FC;
 `
-const Tag = styled.a`
+let Tag = styled.a`
 text-decoration: none;
 color: black;
 
 `
 
-const Social = styled.div`
+let Social = styled.div`
 width: 20%;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
 margin-top: 1%;
 padding: 1%;
-
 `
-const Picture = styled.img`
+let Picture = styled.img`
 width: 15rem;
 height: 15rem;
 
 
 `
 
-const MainCont = styled.div`
+let MainCont = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -75,7 +74,7 @@ height: 100vh;
 background: #2a3439;
 
 `
-const Content = styled.div`
+let Content = styled.div`
 
 width: 60%;
 padding: 2%;
@@ -88,7 +87,7 @@ border-radius: 30px;
 
 `
 
-const Intro = styled.h3`
+let Intro = styled.h3`
 text-align: center;
 width: 100%;
 color: #BB86FC;
