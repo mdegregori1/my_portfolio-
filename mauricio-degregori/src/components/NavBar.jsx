@@ -6,10 +6,10 @@ export const NavBar = () => {
     return (
         <Container>
             <Name>
-                <Me href="/Home">Mauricio Degregori</Me>
+                <Me href="/">Mauricio Degregori</Me>
             </Name>
             <Tabs>
-                <Categories href="/Home">Home</Categories>
+                <Categories href="/">Home</Categories>
                 <Categories href="/Projects">Projects</Categories>
                 <Categories href="/Writing">Writing</Categories>
             </Tabs>
